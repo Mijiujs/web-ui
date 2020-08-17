@@ -1,5 +1,4 @@
 $white-color: #fff;
-$default-color: #f5f5f5;
 
 $primary-color: #409eff;
 $success-color: #67c23a;
@@ -13,8 +12,8 @@ $info-plain-color: #f4f4f5;
 $warning-plain-color: #fdf6ec;
 $error-plain-color: #fef0f0;
 
-@mixin button-type-style($bg-color,$plain-bg-color) {
-    border:1px solid $bg-color;
+@mixin button-type-style($bg-color, $plain-bg-color) {
+    border: 1px solid $bg-color;
     background-color: $bg-color;
     &.plain {
         color: $bg-color;
@@ -53,23 +52,29 @@ $error-plain-color: #fef0f0;
     }
 
     &--primary {
-        @include button-type-style($primary-color,$primary-plain-color);
+        @include button-type-style($primary-color, $primary-plain-color);
     }
 
     &--success {
-        @include button-type-style($success-color,$success-plain-color);
+        @include button-type-style($success-color, $success-plain-color);
     }
 
     &--info {
-        @include button-type-style($info-color,$info-plain-color);
+        @include button-type-style($info-color, $info-plain-color);
     }
 
     &--warning {
-        @include button-type-style($warning-color,$warning-plain-color);
+        @include button-type-style($warning-color, $warning-plain-color);
     }
 
     &--error {
-        @include button-type-style($error-color,$error-plain-color);
+        @include button-type-style($error-color, $error-plain-color);
+    }
+
+    &--text {
+        padding: 0;
+        border: 0;
+        color: $primary-color;
     }
 
     &--small {
@@ -90,9 +95,9 @@ $error-plain-color: #fef0f0;
         border-radius: 20px;
     }
 
-    &.circle{
-        border-radius: 50%;
-    }
+    // &.circle {
+    //     border-radius: 50%;
+    // }
 
     &:hover {
         opacity: 0.8;

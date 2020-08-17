@@ -29,7 +29,7 @@
     </div>
     <h3>尺寸</h3>
     <div>
-      <hyk-btn type="primary" size="normal">尺寸按钮</hyk-btn>
+      <hyk-btn type="primary" size="normal">默认尺寸</hyk-btn>
       <hyk-btn type="primary" size="small">尺寸按钮</hyk-btn>
       <hyk-btn type="primary" size="mini">尺寸按钮</hyk-btn>
     </div>
@@ -49,6 +49,8 @@
     <h3>圆形按钮</h3>
     <hyk-btn circle>默认按钮</hyk-btn>
 
+    <h3>文字按钮</h3>
+    <hyk-btn type="text">默认按钮</hyk-btn>
   </div>
 </template>
 
