@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import hykBtn from '@/components/button/button'
+import hykBtn from '@/components/button/src/button'
 
 export default {
   name: 'home',
