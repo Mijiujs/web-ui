@@ -14,6 +14,9 @@
         }
     ]"
   >
+    <span v-if="loading"><svg class="icon" aria-hidden="true">
+      <use xlink:href="#iconjiazai"></use>
+    </svg></span>
     <span v-if="$slots.default">
       <slot></slot>
     </span>
@@ -54,3 +57,16 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.icon{
+  animation: rotating 2s linear infinite;
+}
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+</style>

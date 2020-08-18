@@ -51,6 +51,7 @@
 
     <h3>文字按钮</h3>
     <hyk-btn type="text">默认按钮</hyk-btn>
+    <hyk-btn loading>正在加载</hyk-btn>
   </div>
 </template>
 
@@ -70,4 +71,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+
 </style>
